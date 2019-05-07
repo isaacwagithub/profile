@@ -28,13 +28,17 @@ header section:last-child{
 
 header section div.headerPic{
 	float: none;
-	width: 90%;
+	width: 74%;
 	height: 70px;
-	margin: 12% 20%;
+	margin: 11% 20%;
+	
+}
+header section div.headerPic img{
+	width: 96%;
+	height: 70px;
 	border: 2px solid #00ff00;
 	border-radius: 50%;
 }
-
 header section p{
 	width: 100%;
 	font-size: 120%;
@@ -87,15 +91,46 @@ header section ul li:last-child a i{
 	background-size: cover;
 }
 .backgroundDiv .opaque-plane{
+	position: relative;
 	width: 100%;
 	height: 100%;
 	background: rgba(128,128,128,.4);
+}
+.backgroundDiv .opaque-plane img{
+	width: 10%;
+	height: 120px;
+	margin: 5% 45% 1% 45%;
+	border-radius: 50%;
+	-webkit-animation: makeChanges 2000ms infinite; /* Safari 4+ */
+	-moz-animation:    makeChanges 2000ms infinite; /* Fx 5+ */
+	-o-animation:      makeChanges 2000ms infinite;
+	animation: makeChanges 2000ms infinite;
+}
+.backgroundDiv .opaque-plane span{
+	position: absolute;
+	width: 12%;
+	height: 4px;
+	background: #00ff00;
+	margin: 0 44%;
+	border: 1px solid #00ff00;
+	transform: translateY(-10px);
+}
+@keyframes makeChanges{
+	0%{
+		opacity: .8;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: .8;
+	}
 }
 .backgroundDiv .opaque-plane h2{
 	text-align: center;
 	color: #fff;
 	font-size: 294%;
-	padding-top: 12%;
+	padding: 0;
 	font-weight: bold;
 }
 .backgroundDiv .opaque-plane p{
@@ -111,4 +146,64 @@ header section ul li:last-child a i{
 	background: #008800;
 	font-size: 120%;
 	border: 2px solid #fff;
+}
+
+.iconsDiv{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 160px;
+}
+.iconsDiv ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.iconsDiv ul li{
+	display: block;
+	float: left;
+	width: 20%;
+	height: 120px;
+	margin: 1% 0;
+	padding: 0;
+}
+.iconsDiv ul li:first-child{
+	margin-left: 10%;
+}
+.iconsDiv ul li:last-child{
+	margin-right: 10%;
+}
+.iconsDiv ul li i{
+	font-size: 200%;
+	padding: 4% 40%;
+	color: #006400;
+	
+}
+.iconsDiv ul li h4{
+	font-size: 150%;
+	text-align: center;
+}
+.iconsDiv ul li p{
+	font-size: 110%;
+	margin: 1% 0;
+	text-align: center;
+}
+
+
+footer{
+	display: block;
+	width: 100%;
+	height: 200px;
+	margin: 0;
+	background: #000000;
+}
+footer section{
+	display: block;
+	float: left;
+	width: 33%;
+	height: 200px;
+	border-right: 1px solid #f4f4f4;
+}
+footer section:last-child{
+	border-right: none;
 }
