@@ -1,0 +1,114 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #f4f4f4;
+	font-family: calibri;
+}
+header{
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100px;
+	background: #343a40;;
+	border-bottom: 3px solid #00ff00;
+}
+header section{
+	dislpay: block;
+	width: 45%;
+	height: 100%;
+	float: left;
+}
+header section:last-child{
+	dislpay: block;
+	width: 55%;
+	height: 100%;
+}
+
+
+header section div.headerPic{
+	float: none;
+	width: 90%;
+	height: 70px;
+	margin: 12% 20%;
+	border: 2px solid #00ff00;
+	border-radius: 50%;
+}
+
+header section p{
+	width: 100%;
+	font-size: 120%;
+	margin: 0;
+	color: #fff;
+	padding: 0;
+	padding-top: 3%;
+}
+header section p span{
+	color: #00ff00;
+	font-size: 110%;
+	border: 0px;
+}
+header section h1{
+	color: #00ff00;
+	font-size: 250%;
+	font-weight: bold;
+}
+
+header section ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+header section ul li{
+	dislpay: block;
+	width: 20%;
+	height: 100%;
+	float: left;
+	color: #ffffff;
+	line-height: 100px;
+	font-weight: bold;
+	font-size: 78%;
+}
+header section ul li a i{
+	color: #00ff00;
+	padding-right: 4%;
+}
+header section ul li:last-child a i{
+	transform: rotate(140deg);
+}
+
+.backgroundDiv{
+	width: 100%;
+	height: 600px;
+	margin: 0;
+	padding: 0;
+	background: url('../images/FeatureBox-ComputingSoftwareEngineering.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.backgroundDiv .opaque-plane{
+	width: 100%;
+	height: 100%;
+	background: rgba(128,128,128,.4);
+}
+.backgroundDiv .opaque-plane h2{
+	text-align: center;
+	color: #fff;
+	font-size: 294%;
+	padding-top: 12%;
+	font-weight: bold;
+}
+.backgroundDiv .opaque-plane p{
+	text-align: center;
+	color: #fff;
+	font-size: 260%;
+	padding-top: 0%;
+}
+.backgroundDiv .opaque-plane .btn-primary{
+	width: 20%;
+	height: 56px;
+	margin: 1% 40%;
+	background: #008800;
+	font-size: 120%;
+	border: 2px solid #fff;
+}
