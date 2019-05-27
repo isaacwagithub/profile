@@ -10,7 +10,7 @@ header{
 	padding: 0;
 	width: 100%;
 	height: 100px;
-	background: #343a40;;
+	background: #343a40;
 	border-bottom: 3px solid #00ff00;
 }
 header section{
@@ -80,8 +80,12 @@ header section ul li a i{
 header section ul li:last-child a i{
 	transform: rotate(140deg);
 }
-
-.backgroundDiv{
+.firstPageDiv{
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+.firstPageDiv .backgroundDiv{
 	width: 100%;
 	height: 600px;
 	margin: 0;
@@ -90,31 +94,24 @@ header section ul li:last-child a i{
 	background-position: center;
 	background-size: cover;
 }
-.backgroundDiv .opaque-plane{
+.firstPageDiv .backgroundDiv .opaque-plane{
 	position: relative;
 	width: 100%;
 	height: 100%;
 	background: rgba(128,128,128,.4);
 }
-.backgroundDiv .opaque-plane img{
-	width: 10%;
-	height: 120px;
-	margin: 5% 45% 1% 45%;
-	border-radius: 50%;
-	-webkit-animation: makeChanges 2000ms infinite; /* Safari 4+ */
-	-moz-animation:    makeChanges 2000ms infinite; /* Fx 5+ */
-	-o-animation:      makeChanges 2000ms infinite;
-	animation: makeChanges 2000ms infinite;
-}
-.backgroundDiv .opaque-plane span{
-	position: absolute;
+.firstPageDiv .backgroundDiv .opaque-plane img{
 	width: 12%;
-	height: 4px;
-	background: #00ff00;
-	margin: 0 44%;
-	border: 1px solid #00ff00;
-	transform: translateY(-10px);
+	height: 140px;
+	margin: 5% 44% 1% 44%;
+	border-radius: 50%;
+	border: 4px solid #00ff00;
+	/*-webkit-animation: makeChanges 2000ms infinite; /* Safari 4+ */
+	/*-moz-animation:    makeChanges 2000ms infinite; /* Fx 5+ */
+	/*-o-animation:      makeChanges 2000ms infinite;
+	/*animation: makeChanges 2000ms infinite;*/
 }
+
 @keyframes makeChanges{
 	0%{
 		opacity: .8;
@@ -126,20 +123,26 @@ header section ul li:last-child a i{
 		opacity: .8;
 	}
 }
-.backgroundDiv .opaque-plane h2{
+.firstPageDiv .backgroundDiv .opaque-plane h2{
 	text-align: center;
 	color: #fff;
-	font-size: 294%;
+	font-size: 300%;
 	padding: 0;
 	font-weight: bold;
 }
-.backgroundDiv .opaque-plane p{
+.firstPageDiv .backgroundDiv .opaque-plane h2 section{
+	color: #00ff00;
+	display: inline-block;
+	float: none;
+}
+.firstPageDiv .backgroundDiv .opaque-plane p{
 	text-align: center;
 	color: #fff;
-	font-size: 260%;
+	font-size: 250%;
 	padding-top: 0%;
+	font-weight: bold;
 }
-.backgroundDiv .opaque-plane .btn-primary{
+.firstPageDiv .backgroundDiv .opaque-plane .btn-primary{
 	width: 20%;
 	height: 56px;
 	margin: 1% 40%;
@@ -148,18 +151,18 @@ header section ul li:last-child a i{
 	border: 2px solid #fff;
 }
 
-.iconsDiv{
+.firstPageDiv .iconsDiv{
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	min-height: 160px;
 }
-.iconsDiv ul{
+.firstPageDiv .iconsDiv ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-.iconsDiv ul li{
+.firstPageDiv .iconsDiv ul li{
 	display: block;
 	float: left;
 	width: 20%;
@@ -167,26 +170,167 @@ header section ul li:last-child a i{
 	margin: 1% 0;
 	padding: 0;
 }
-.iconsDiv ul li:first-child{
+.firstPageDiv .iconsDiv ul li:first-child{
 	margin-left: 10%;
 }
-.iconsDiv ul li:last-child{
+.firstPageDiv .iconsDiv ul li:last-child{
 	margin-right: 10%;
 }
-.iconsDiv ul li i{
+.firstPageDiv .iconsDiv ul li i{
 	font-size: 200%;
 	padding: 4% 40%;
 	color: #006400;
 	
 }
-.iconsDiv ul li h4{
+.firstPageDiv .iconsDiv ul li h4{
 	font-size: 150%;
 	text-align: center;
 }
-.iconsDiv ul li p{
+.firstPageDiv .iconsDiv ul li p{
 	font-size: 110%;
 	margin: 1% 0;
 	text-align: center;
+}
+
+
+.secondPageDiv{
+	clear: both;	
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+.secondPageDiv .headShot{
+	width: 100%;
+	height: 300px;
+	margin: 0;
+}
+.aboutMe ul.sideMenu{
+	margin: 0;
+	margin-top: 16%;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	height: 600px;
+}
+.aboutMe ul.sideMenu li{
+	display: block;
+	width: 100%;
+	height: 60px;
+	border: 2px solid #006400;
+	text-align: center;
+	line-height: 60px;
+	margin: 2px 0;
+	margin-left: 10px;
+	border-radius: 4px;
+	color: #006400;
+	font-weight: bold;
+}
+.aboutMe ul.sideMenu li:first-child{
+	border-radius: 0;
+	border: none;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+.aboutMe ul.sideMenu li:hover{
+	background: #006400;
+	color: #fff;
+	cursor: pointer;
+	font-size: 140%;
+}
+.aboutMe ul.sideMenu li:first-child:hover{
+	color: #fff;
+	cursor: pointer;
+	background: none;
+}
+.aboutMe ul.sideMenu li:first-child img{
+	width: 30%;
+	height: 60px;
+	margin: 1% 35%;
+	border-radius: 50%;
+	border: 3px solid #fff;
+}
+.aboutMe .loadedInfo .shortData img{
+	width: 12%;
+	height: 140px;
+	margin: 1% 44%;
+	border-radius: 50%;
+	border: 3px solid #fff;
+}
+.aboutMe .loadedInfo .shortData span{
+	display: block;
+	width: 40%;
+	height: 100px;
+	background: #006400;
+	margin: -6% 20% 0 30%;
+}
+.aboutMe .loadedInfo h1{
+	text-align: center;
+	font-size: 320%;
+	font-weight: bold;
+	color: #333;
+} 
+.aboutMe .loadedInfo p{
+	width: 80%;
+	margin: 0 10%;
+	text-align: center;
+	font-size: 124%;
+}
+.aboutMe .loadedInfo p span.ParagraphSpan{
+	color: #006400;
+	font-weight: bold;
+	width: auto;
+	height: auto;
+	background: none;
+	margin: 0%;
+	display: inline-block;
+}
+
+.secondPageDiv .shortInfoDiv{
+	clear: both;
+	width: 100%;
+	height: 400px;
+	margin: 1% 0;
+}
+.hideIt{
+	display: none;
+}
+.showIt{
+	display: block;
+}
+.tools{
+	clear: both;
+	width: 100%;
+	height: 600px;
+	margin: 0;
+	margin-top: 60px;
+	padding: 0;
+}
+.tools h2{
+	text-align: center;
+	color: #006400;
+	font-size: 280%;
+	font-weight: bold;
+}
+.tools ul{
+	clear: both;
+	margin: 0;
+	margin-left: 26px;
+	padding: 0;
+	list-style: none;
+}
+.tools ul li{
+	float: left;
+	display: block;
+	width: 150px;
+	min-height: 100px;
+	margin: 0;
+}
+.tools ul li img{
+	width: 100px;
+	height: 100px;
+}
+.tools ul li label{
+	clear: both;
 }
 
 
